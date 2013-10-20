@@ -1,0 +1,10 @@
+If you'd like to keep the zeros from your imported data (instead of dashes or whatever), follow these instructions:
+
+Add this underneath "# use the unix command cut for this"  in mergeorama.sh
+
+  # convert dashes back to zero
+  perl -pi -e 's/-/0/g' ../output.csv 
+
+----------------------------------------
+
+If it isn't working, make sure you've emptied out the files in the data folder, which may contain the remnants of earlier attempts to parse the data.
