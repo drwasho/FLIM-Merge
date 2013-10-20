@@ -1,0 +1,19 @@
+=Input files=
+  pixelID.txt 
+    contains the x-values (2000.0000 etc) and dummy y-values (d)
+    PixelID d 
+    2000.00000 d 
+    2020.00000 d
+
+
+=Data files=
+  Put them in the folder “data”
+  The file suffix is here .asc. If you need to change it, edit mergeorama.sh 
+
+Your data files contains the x-values corresponding to pixelID.txt
+
+run mergeorama.sh (if not in $PATH, type bash mergeorama.sh)
+
+=Output files=
+  The output file is entitled output.csv
+  this file will be tabulated, so you can import it into Excel, R etc for downstream data analysis
