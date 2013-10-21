@@ -25,12 +25,12 @@ done
 for i in *.asc ; do
 perl -pi -e 's/\s0\s/\ \-\n/g' $i ;
 # perl ../zeroToDeci.pl $i ;
-cp $i $i.bac ;
-rm $i ;
-cp $i $i.input ;  # your input data files no longer contains just zeros! 
+#@ cp $i $i.bac ;
+#@ rm $i ;
+#@ cp $i $i.input ;  # your input data files no longer contains just zeros! 
 done
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
-for j in *.input ; do
+for j in *.asc ; do
 perl ../mergefiles.pl largerfile.txt $j ;
 rm ./temp.txt ; # get rid of your temp files
 rm ../temp.txt ; # get rid of your temp files
