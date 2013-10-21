@@ -17,4 +17,6 @@ How to make this work
 Who to thank
 ============
 
-This script was written by Dr Inge Seim, GitHub'd by me. Send your Bitcoins to Inge at: 1Hvsw4SYYbofjbyZA4BxdYEM31Kta3y1vY
+This script was written by Dr Inge Seim... bug tested and GitHub'd by me. 
+
+Send your Bitcoins to Inge at: 1Hvsw4SYYbofjbyZA4BxdYEM31Kta3y1vY
