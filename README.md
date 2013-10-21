@@ -9,7 +9,8 @@ How to make this work
 =====================
 
 1. Copy in your data files (.asc) into a folder called 'data' (e.g. C://Work/FLIM/data). IMPORTANT: this data will be renamed and modified, so make sure the data is copied and not your only copy in case anything goes wrong... you have been warned!!!
-2. Make sure that mergefiles.pl, pixelID.txt and mergeorama.sh are all in a folder a level up from 'data'. E.g. C://Work/FLIM/
+2. Make sure that mergefiles.pl, pixelID.txt and mergeorama.sh are all in a folder a level up from 'data' (e.g. C://Work/FLIM/).
+3. IMPORTANT: The x column (left column) in the pixelID.txt file must match the x column of your data set. You can replace it easily using excel and notepad in a few steps. 
 3. Open up the terminal and navigate to your working folder where the scripts are located
 4. Run the script by entering 'bash mergeorama.sh' in the terminal.
 5. Your data will be in the output.csv file
