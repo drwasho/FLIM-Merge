@@ -12,7 +12,7 @@ How to make this work
 2. Make sure that mergefiles.pl, pixelID.txt and mergeorama.sh are all in a folder a level up from 'data'. E.g. C://Work/FLIM/
 3. Open up the terminal and navigate to your working folder where the scripts are located
 4. Run the script by entering 'bash mergeorama.sh' in the terminal.
-5. You data will be in the output.csv file
+5. Your data will be in the output.csv file
 
 Who to thank
 ============
