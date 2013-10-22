@@ -35,7 +35,7 @@ cd ../ ;
 # add header
 perl -pi -le 'print "PixelID dummy" if $. == 1' input.txt ;   #  ; # Add this line to the top\n";
 # Dummy run
-perl mergefiles.pl input.txt input.txt ;
+perl FLIMerge.pl input.txt input.txt ;
 cp largerfile.txt ./data ;
 rm ./temp.txt ; # get rid of your temp files
 rm ./largerfile.txt ; # get rid of your temp files
@@ -44,7 +44,7 @@ cd ./data ;
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # run the script on all your datafiles 
 for j in *.asc ; do
-perl ../mergefiles.pl largerfile.txt $j ;
+perl ../FLIMerge.pl largerfile.txt $j ;
 rm ./temp.txt ; # get rid of your temp files
 done
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
