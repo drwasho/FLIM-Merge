@@ -3,7 +3,7 @@ use strict;
 use Term::ANSIColor;
 
 ################################################################################################################################################################
-# mergefiles.pl - this script does something awful.
+# FLIMerge.pl - this script does something awful.
 # By Inge Seim
 # 10/2013
 #
