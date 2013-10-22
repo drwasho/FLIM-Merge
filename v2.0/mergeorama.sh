@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ################################################################################################################################################################
-# mergeorama.sh - this script does something awful.
+# FLIMerge.sh - this script does something awful.
 # By Inge Seim
 # 10/2013 v3
 #
