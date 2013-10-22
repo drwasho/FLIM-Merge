@@ -9,8 +9,6 @@
 # 
 ################################################################################################################################################################
 
-
-
 # fix file name's first!
 #convert data files spaces to _/underscore if you have weird Windows file names etc.
 cd ./data ;  
@@ -42,7 +40,7 @@ rm ./largerfile.txt ; # get rid of your temp files
 cd ./data ;
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# run the script on all your datafiles 
+# run the Perl script on all your datafiles 
 for j in *.asc ; do
 perl ../FLIMerge.pl largerfile.txt $j ;
 rm ./temp.txt ; # get rid of your temp files
