@@ -9,8 +9,6 @@ use Term::ANSIColor;
 #
 ################################################################################################################################################################
 
-
-
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 # Prepare the INPUT
 my %col2;  #PixelID in column 1 to special column 2
@@ -64,25 +62,13 @@ print color 'reset';
 
 
 
-
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 # ############################################################################### 
 # Here comes the actual comparison of the two files!
-#
-# open (my $two_cols, '<', $file2) or die "unable to open $file2 $!";
-# my $two_cols = $file2newheader ;
 open (my $two_cols, '<', 'temp.txt') or die "unable to open $file2 $!";
-
-# $two_cols = map {$_ eq "" ? 0 : $_} $two_cols;
-
 
 # this is the big file that contains more and more "y" values
 open (my $big_file, '<', $file1) or die "unable to open $file1 $!";
-
- 
-# $big_file = map {$_ eq "" ? 0 : $_} $big_file;
-# This will ensure that ...
-
 
 %col2 = map{   s/\s+$//; #chomp + zap trailing white space   
                my ($gene, $v) = split(/\s/,$_,3);
@@ -112,5 +98,4 @@ print "THIS IS THE ENTIRE OUTPUT FILE, WHICH WILL GROW LARGER AND LARGER AS THE 
 print color 'bold green' ;
 print "# ###############################################################################" . "\n" ;
 print color 'reset';
-
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
