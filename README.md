@@ -1,9 +1,8 @@
-Batch-data-parse-csv-import
-===========================
+# FLIM-Merge
 
 These scripts will parse multiple data files (with the same x column values, different y column values) into a csv file that can be easily imported into Excel or Graphpad. Originally developed for data created by SPCImage (http://www.becker-hickl.com/ | http://www.becker-hickl.com/software/tcspc/softwaretcspcspecial.htm), but will work for any .asc file (or anything with a few edits).
 
-Latest version is 3.0
+Latest version is 2.0
 
 How to make this work
 =====================
@@ -13,6 +12,7 @@ How to make this work
 3. Open up the terminal and navigate to your working folder where the scripts are located
 4. Run the script by entering 'bash FLIMerge.sh' in the terminal.
 5. Your data will be in the output.csv file
+6. When you open the .csv file in Excel or LibreOffice, indicate that the data is delimited by a **tab** in order for the data to be imported neatly into parallel columns
 
 Who to thank
 ============
